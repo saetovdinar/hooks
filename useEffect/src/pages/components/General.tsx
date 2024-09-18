@@ -15,7 +15,9 @@ export interface notesProp {
 
 export default function App(): JSX.Element {
   const [lists, setLists] = useState<notesProp[]>([]);
-  const [details, setDetails] = useState();
+  const [details, setDetails] = useState()
+  
+
   const [hash, setHash] = useState({
     prevID: '',
     

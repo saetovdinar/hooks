@@ -1,11 +1,10 @@
 import useJsonFetch from '../hook/useJsonFetch'
 
 
-export default function ErrorReq() {
+export default function SuccessReq({url}: {url:string}) {
 
 
-
-  const [data] = useJsonFetch('http://localhost:7070/error')
+  const [data] = useJsonFetch(url)
   console.log(data)
     return (
             <div  >

@@ -1,7 +1,6 @@
 import React from 'react';
-import ErrorReq from './ErrorReq';
-import LoadingReq from './LoadingReq';
-import SuccessReq from './SuccessReq';
+
+import Answer from './Answer';
 
 
 export default function General() {
@@ -10,9 +9,8 @@ export default function General() {
 
   return (
     <>
-      <ErrorReq></ErrorReq>
-      <LoadingReq></LoadingReq>
-      <SuccessReq></SuccessReq>
+      <Answer url={'http://localhost:7070/data'}></Answer>
+  
     </>
   );
 }
