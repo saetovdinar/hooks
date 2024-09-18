@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './app.module.css';
-import FirstRequest from './FirstRequest';
+import ErrorReq from './ErrorReq';
+import LoadingReq from './LoadingReq';
+import SuccessReq from './SuccessReq';
 
 
 export default function General() {
@@ -9,8 +10,9 @@ export default function General() {
 
   return (
     <>
-     
-        <FirstRequest></FirstRequest>
+      <ErrorReq></ErrorReq>
+      <LoadingReq></LoadingReq>
+      <SuccessReq></SuccessReq>
     </>
   );
 }
