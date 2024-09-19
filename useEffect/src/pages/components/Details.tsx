@@ -22,7 +22,7 @@ export default function Details({data}: detailsProps): JSX.Element {
 
       <div className={styles.container}>
 
-        <Image src={data.avatar } alt="avatar" width={200} height={200}/>
+        <Image src={`${data.avatar}?u=${data.id}` } alt="avatar" width={200} height={200}/>
         <h2>{data?.name}</h2>
         <h3>{data?.details.city}</h3>
         <h3>{data?.details.company}</h3>
